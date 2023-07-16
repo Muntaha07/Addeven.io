@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD & Even</title>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+ <style>
+    body{
+        background-color: #08d0af;
+    }
+    .footer {
+  height: 50px;
+  background-color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  margin-top: 523px;
+
+}
+.center{
+    text-align: center;
+}
+ </style>
+ 
+</head>
+<body>
+
+ <h2 style="text-align: center; color: white; background-color: #FA2B6D"> JavaScript to find Odd or Even number! </h2>
+<div class="center">
+
+    <label> Enter Number </label> <br>
+    <input type="number" name="" id="evenOdd" onkeyup="isCheck()">
+    <span id="showMssg" style="color: #342BFA;">  </span>
+   </br><br>
+   
+    <label> Enter Number </label> <br>
+    <input type="number" name="" id="evenOdds" onkeyup="isChecks()">
+    <span id="showMssgs" style="color: #FA2B44;">  </span>
+</div>
+
+ <div class="footer">
+    <p>Copyright &copy; Muntaha Majeed </p>
+    
+</div>
+
+<script>
+ 
+function isCheck(){
+ var num = document.getElementById('evenOdd').value;
+ // alert(num);
+ if((num%2) == 0){
+ document.getElementById('showMssg').innerHTML = "Hurray! Number "+num+"  is an even number";
+ }
+ else{
+ document.getElementById('showMssg').innerHTML = "Oo No! "+num+"  is not an even number";
+ }
+
+ if(num === ""){
+ document.getElementById('showMssg').innerHTML = "";
+ }
+}
+
+function isChecks(){
+ var num = document.getElementById('evenOdds').value;
+ // alert(num);
+ if((num%2) == 0){
+ document.getElementById('showMssgs').innerHTML = "Hurray! Number "+num+"  is an even number";
+ }
+ else{
+ document.getElementById('showMssgs').innerHTML = "Oo No! "+num+"  is not an even number";
+ }
+
+ if(num === ""){
+ document.getElementById('showMssgs').innerHTML = "";
+ }
+}
+
+
+alert =prompt("this is about add Even Sumaan Challages Litter bit copy idea don't Mind ");
+    // console.log(alert)
+    let opening  = confirm("Opening website Enjoy  wait a min")
+    if (opening) {
+        console.log("yahoo whats aap ")
+    }
+    else {
+        console.log("oh noo don't opening file")
+    }
+
+</script>
+
+</body>
+</html>
